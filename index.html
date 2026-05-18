@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>越南歷史及傳統文化 - Lịch sử & Văn hóa Việt Nam</title>
+    <style>
+        /* --- Reset & Base Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcfaf2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: #8b0000; /* Đỏ đô truyền thống */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #d4af37; /* Vàng hoàng gia */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #d4af37;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #2b2b2b;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+            background-color: #3d3d3d;
+            border-radius: 4px;
+        }
+
+        /* --- Hero Banner --- */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            border-bottom: 3px solid #d4af37;
+            padding-bottom: 10px;
+        }
+
+        /* --- Main Container --- */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* --- Sections --- */
+        section {
+            margin-bottom: 60px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 6px solid #8b0000;
+        }
+
+        section h2 {
+            color: #8b0000;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* --- Grid Layout for Culture Content --- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #8b0000;
+            margin-bottom: 10px;
+        }
+
+        /* --- Timeline for History --- */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 5px;
+            background: #d4af37;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: -25px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: #e0e0e0;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #8b0000;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #2b2b2b;
+            color: #bbb;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            border-top: 4px solid #8b0000;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive Style --- */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .hero h2 { font-size: 2rem; }
+            nav a { display: inline-block; padding: 8px 12px; margin: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>越南歷史及傳統文化</h1>
+        <p>Tìm hiểu Lịch sử và Văn hóa Truyền thống Việt Nam</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#intro">簡介 (Giới thiệu)</a>
+        <a href="#history">歷史年表 (Lịch sử)</a>
+        <a href="#culture">傳統文化 (Văn hóa)</a>
+        <a href="#heritage">文化遺產 (Di sản)</a>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="hero">
+        <h2>千年悠久的文化與歷史</h2>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Section: Introduction -->
+        <section id="intro">
+            <h2>簡介 / Giới thiệu tổng quan</h2>
+            <p>越南是一個擁有四千多年歷史與文明的國家。坐落於東南亞中南半島東側，越南不僅孕育了獨特的本土文化，在發展過程中也融合了東亞儒家文化與西方文化的元素，形成了如今獨具魅力、豐富多彩的文化共同體。</p>
+        </section>
+
+        <!-- Section: History Timeline -->
+        <section id="history">
+            <h2>歷史時期 / Các thời kỳ lịch sử chính</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">上古時期 (Thời kỳ Hồng Bàng & Hùng Vương)</div>
+                    <p>文郎國與甌雒國的建立，是越南民族開國的源頭，孕育了著名的東山文化（Dong Son Culture）與青銅銅鼓技術。</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">北屬時期 (Thời kỳ Bắc thuộc - 111 TCN - 938)</div>
+                    <p>長達千年的反抗與融合時期。雖然深受中原文化影響，但越南民族始終保持著強烈的獨立意識。</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">自主封建時期 (Thời kỳ封建獨立 - 938 - 1945)</div>
+                    <p>吳權在白藤江之戰大捷後開啟了獨立自主的新紀元。經歷了丁、前黎、李、陳、黎、阮等朝代，創造了燦爛的皇朝文化。</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">現代時期 (Thời kỳ hiện đại)</div>
+                    <p>經過抗法與抗美戰爭，越南於1975年實現全國統一，並在現今成為東南亞發展最迅猛的經濟體之一。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Traditional Culture -->
+        <section id="culture">
+            <h2>傳統文化核心 / Nét đẹp văn hóa truyền thống</h2>
+            <div class="grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80" alt="Vietnamese Food" class="card-img">
+                    <div class="card-content">
+                        <h3>飲食文化 (Ẩm thực)</h3>
+                        <p>越南飲食講究陰陽平衡與清淡天然。著名的有越南河粉（Phở）、春卷（Nem rán）以及舉世聞名的越南滴漏咖啡。</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=400&q=80" alt="Ao Dai" class="card-img">
+                    <div class="card-content">
+                        <h3>傳統服飾 (Trang phục)</h3>
+                        <p>奧黛（Áo Dài）是越南的國服，完美展現了女性的優雅與柔美。此外，男士的傳統長袍（Áo ngũ thân）也正在現代復興。</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?auto=format&fit=crop&w=400&q=80" alt="Festival" class="card-img">
+                    <div class="card-content">
+                        <h3>傳統節日 (Lễ hội truyền thống)</h3>
+                        <p>春節（Tết Nguyên Đán）是越南最盛大的節日。此外還有中秋節、雄王祭祖節等，承載著飲水思源的傳統美德。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Heritage -->
+        <section id="heritage">
+            <h2>世界文化遺產 / Di sản văn hóa thế giới</h2>
+            <p>聯合國教科文組織（UNESCO）在越南認定了多處世界遺產，包括：</p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>順化古蹟群 (Quần thể di tích Cố đô Huế):</strong> 阮朝的皇宮建築群。</li>
+                <li><strong>會安古鎮 (Phố cổ Hội An):</strong> 15至19世紀底保留完好的東南亞傳統商埠。</li>
+                <li><strong>昇龍皇城 (Hoàng thành Thăng Long):</strong> 見證了河內千年的歷史更迭。</li>
+                <li><strong>美山聖地 (Thánh địa Mỹ Sơn):</strong> 古代占婆王國的印度教聖地遺跡。</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 越南歷史及傳統文化研究小組. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 5px;">Designed with passion for cultural heritage.</p>
+    </footer>
+
+</body>
+</html>
